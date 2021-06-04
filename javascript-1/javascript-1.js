@@ -8,8 +8,9 @@
     Call the array 'myArr'.
 */
 
-//CODE HERE
+//ANSWER
 
+ var myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 
 ////////////////////PROBLEM 2////////////////////
 /*
@@ -20,7 +21,8 @@
 
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
-//CODE HERE
+//ANSWER
+
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -36,16 +38,20 @@ const savannah = ['lion', 'zebra', 'lion', 'giraffe']
 const desert = ['rattlesnake', 'coyote']
 //DO NOT EDIT CODE ABOVE
 
-//CODE HERE
+//ANSWER
 
+const animals = [...forest, ...ocean, ...savannah, ...desert]
+console.log(animals)
 
 /*
     Now use the spread operator to make a copy of your animals array.
     Call the new array 'animalsCopy' and add 'elephant' onto the end of the array.
 */
 
-//CODE HERE
+//ANSWER
 
+const animalsCopy = [...animals]
+console.log(animalsCopy)
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -57,6 +63,13 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
 
+const compareNums = (num1, num2) => {
+ if (num1 >= num2){
+     return num1
+ } else if (num1 < num2){
+     return num2
+ }
+}
   
 ////////////////////PROBLEM 5////////////////////
 /*
@@ -67,16 +80,19 @@ const desert = ['rattlesnake', 'coyote']
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
-  
+//ANSWER
+var title = 'Sharknado'
+
+const bestMovie = (title) => title + ' is the best movie ever!'
   
 ////////////////////PROBLEM 6////////////////////
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
-  
+//ANSWER
+
+const jsNinja = () => 'I am a Javascript ninja!'
 
 ////////////////////PROBLEM 7////////////////////
 
@@ -96,8 +112,9 @@ const desert = ['rattlesnake', 'coyote']
     delete the rating property off of the gameInfo object.
 */
 
-//CODE HERE
-  
+//ANSWER
+
+delete gameInfo.rating
 
 ////////////////////PROBLEM 8////////////////////
 
@@ -118,8 +135,9 @@ const desert = ['rattlesnake', 'coyote']
     looping over the shapes object and deleting any property whose value is odd number.
 */
 
-//CODE HERE
-  
+//ANSWER
+
+
   
 ////////////////////PROBLEM 9////////////////////
 

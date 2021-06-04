@@ -1,5 +1,4 @@
-/* 
-
+/*
 these are the colors used in the example
 ***you can use them if you'd like or you can choose your own***
 
@@ -12,3 +11,9 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+.header{
+    height: auto;
+    width: auto;
+    background-color: black;
+}
