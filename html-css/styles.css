@@ -11,9 +11,33 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-.header{
-    height: auto;
-    width: auto;
-    background-color: black;
+header {
+    height: 10vh;
+    width: 100%;
+    display: inline-flex;
+    background-color: rgb(37, 37, 37);
+    color:rgb(42, 171, 226);
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav {
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 3vh;
+    width: 60vh;
+}
+
+.skill-check {
+    height: 100%;
+    width: 100vh;
+    margin-top: 5vh;
+    margin-left: 10vh;
 }
