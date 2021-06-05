@@ -137,7 +137,13 @@ delete gameInfo.rating
 
 //ANSWER
 
-
+for (let key in shapes) {
+ if (key % 2 === 0) {
+     return true
+ } else {
+     delete shapes.key;
+ }  
+}
   
 ////////////////////PROBLEM 9////////////////////
 
@@ -178,9 +184,15 @@ const classes = [
     all online classes with no homework.
 */
 
-//CODE HERE
+//ANSWER
 
-
+for (let i = 0; i < classes.length; i++) {
+    for (let key in classes){
+        if (key.includes('true')){
+            classes[key] = 'false'
+        }
+    }
+}
   
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -195,9 +207,11 @@ const lettersToPair = ['e', 'k', 's', 'a', 'e', 's', 'a', 'n', 'k', 'n']
 let pairsArray = []
 //DO NOT EDIT CODE ABOVE
 
-//CODE HERE
+//ANSWER
 
-    
+for (let i = 0; i < lettersToPair.length; i++){
+
+}    
 
 //////////////////////////////////PROBLEMS 11-14//////////////////////////////////
 /*
@@ -212,8 +226,14 @@ let pairsArray = []
     Those values should come from the functions parameters: name, age, breed, tricks (in order).
 */
 
-//CODE HERE
+//ANSWER
 
+function Dog(name, age, breed, tricks) {
+    this.name = name
+    this.age = age
+    this.breed = breed
+    this.tricks = tricks
+}
 
 /*
     Invoke your dog constructor passing in 'Fido' for the name, 3 for the age, 
@@ -221,8 +241,9 @@ let pairsArray = []
     Store the result in a variable called 'fido'.
 */
 
-//CODE HERE
-  
+//ANSWER
+
+const fido = Dog('Fido', 3, 'Jack Russell', ['sit', 'shake'])
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -231,8 +252,11 @@ let pairsArray = []
     NAME will come from that context, so you should reference 'this.name' to get the correct name.
 */
 
-//CODE HERE
+//ANSWER
 
+function bark(){
+    return this
+}
 
 /*
     Invoke the call method on bark, passing in fido as the context
